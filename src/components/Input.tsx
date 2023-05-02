@@ -5,10 +5,10 @@ type InputProps = {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-export const Input = (props: InputProps) => {
+export const Input = ({value, handleChange}: InputProps) => {
   // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
   //   console.log(e)
   // }
   
-  return <input type="text" value={props.value} onChange={props.handleChange}/>
+  return <input type="text" value={value} onChange={handleChange}/>
 }
