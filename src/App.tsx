@@ -1,6 +1,7 @@
 import './App.css';
-import { Button } from './components/Button';
-import { Input } from './components/Input';
+import { Container } from './components/Container';
+// import { Button } from './components/Button';
+// import { Input } from './components/Input';
 // import { Grammy } from './components/Grammy';
 // import { Greet } from './components/Greet';
 // import { Heading } from './components/Heading';
@@ -52,13 +53,21 @@ import { Input } from './components/Input';
 //   )
 // }
 
-function App() { 
+// function App() { 
+//   return (
+//     <div className='App'>
+//       <Button handleClick={(event) => {
+//         console.log("Button clicked", event)
+//       }}/>
+//       <Input value="" handleChange={(e) => console.log(e)} />
+//     </div>
+//   )
+// }
+
+function App() {
   return (
     <div className='App'>
-      <Button handleClick={(event) => {
-        console.log("Button clicked", event)
-      }}/>
-      <Input value="" handleChange={(e) => console.log(e)} />
+      <Container styles={{border: '1px solid black', padding: "1rem", display: "flex"}} />
     </div>
   )
 }
